@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7705517E1B022B0000FCC975 /* TKChatRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770551771B022B0000FCC975 /* TKChatRoomController.m */; };
+		7705517F1B022B0000FCC975 /* TKChatRoomController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770551781B022B0000FCC975 /* TKChatRoomController.xib */; };
+		770551881B022CF800FCC975 /* TKHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770551861B022CF800FCC975 /* TKHomeController.m */; };
+		770551891B022CF800FCC975 /* TKHomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770551871B022CF800FCC975 /* TKHomeController.xib */; };
+		7705518C1B022D1E00FCC975 /* TKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705518B1B022D1E00FCC975 /* TKBaseViewController.m */; };
+		7705518F1B022DA400FCC975 /* TKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705518E1B022DA400FCC975 /* TKBaseNavigationController.m */; };
+		770551921B022FAE00FCC975 /* TKMessageInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770551911B022FAD00FCC975 /* TKMessageInputView.m */; };
+		770551951B022FD100FCC975 /* TKMessageBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770551941B022FD100FCC975 /* TKMessageBaseView.m */; };
+		770551981B022FF200FCC975 /* TKMessageReceiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770551971B022FF200FCC975 /* TKMessageReceiveView.m */; };
+		7705519B1B02300300FCC975 /* TKMessageSendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705519A1B02300300FCC975 /* TKMessageSendView.m */; };
+		770551BA1B02313D00FCC975 /* bg_bdd761m_day_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 7705519F1B02313C00FCC975 /* bg_bdd761m_day_title.png */; };
+		770551BB1B02313D00FCC975 /* bg_bdd761m_day_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A01B02313C00FCC975 /* bg_bdd761m_day_title@2x.png */; };
+		770551BC1B02313D00FCC975 /* bg_bdd761m_day_title@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A11B02313C00FCC975 /* bg_bdd761m_day_title@3x.png */; };
+		770551BD1B02313D00FCC975 /* bg_bdd761m_message_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A21B02313C00FCC975 /* bg_bdd761m_message_bar.png */; };
+		770551BE1B02313D00FCC975 /* bg_bdd761m_message_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A31B02313C00FCC975 /* bg_bdd761m_message_bar@2x.png */; };
+		770551BF1B02313D00FCC975 /* bg_bdd761m_message_bar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A41B02313C00FCC975 /* bg_bdd761m_message_bar@3x.png */; };
+		770551C01B02313D00FCC975 /* bg_bdd761m_message_box_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A51B02313C00FCC975 /* bg_bdd761m_message_box_1.png */; };
+		770551C11B02313D00FCC975 /* bg_bdd761m_message_box_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A61B02313C00FCC975 /* bg_bdd761m_message_box_1@2x.png */; };
+		770551C21B02313D00FCC975 /* bg_bdd761m_message_box_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A71B02313D00FCC975 /* bg_bdd761m_message_box_1@3x.png */; };
+		770551C31B02313D00FCC975 /* bg_bdd761m_message_box_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A81B02313D00FCC975 /* bg_bdd761m_message_box_2.png */; };
+		770551C41B02313D00FCC975 /* bg_bdd761m_message_box_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A91B02313D00FCC975 /* bg_bdd761m_message_box_2@2x.png */; };
+		770551C51B02313D00FCC975 /* bg_bdd761m_message_box_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551AA1B02313D00FCC975 /* bg_bdd761m_message_box_2@3x.png */; };
+		770551C61B02313D00FCC975 /* bg_bdd761m_message_input.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551AB1B02313D00FCC975 /* bg_bdd761m_message_input.png */; };
+		770551C71B02313D00FCC975 /* bg_bdd761m_message_input@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551AC1B02313D00FCC975 /* bg_bdd761m_message_input@2x.png */; };
+		770551C81B02313D00FCC975 /* bg_bdd761m_message_input@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551AD1B02313D00FCC975 /* bg_bdd761m_message_input@3x.png */; };
+		770551C91B02313D00FCC975 /* chatroom_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551AE1B02313D00FCC975 /* chatroom_bg.png */; };
+		770551CA1B02313D00FCC975 /* chatroom_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551AF1B02313D00FCC975 /* chatroom_bg@2x.png */; };
+		770551CB1B02313D00FCC975 /* chatroom_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B01B02313D00FCC975 /* chatroom_bg@3x.png */; };
+		770551CC1B02313D00FCC975 /* ic_bdd761m_add_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B11B02313D00FCC975 /* ic_bdd761m_add_photo.png */; };
+		770551CD1B02313D00FCC975 /* ic_bdd761m_add_photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B21B02313D00FCC975 /* ic_bdd761m_add_photo@2x.png */; };
+		770551CE1B02313D00FCC975 /* ic_bdd761m_add_photo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B31B02313D00FCC975 /* ic_bdd761m_add_photo@3x.png */; };
+		770551CF1B02313D00FCC975 /* ic_bdd761m_send.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B41B02313D00FCC975 /* ic_bdd761m_send.png */; };
+		770551D01B02313D00FCC975 /* ic_bdd761m_send@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B51B02313D00FCC975 /* ic_bdd761m_send@2x.png */; };
+		770551D11B02313D00FCC975 /* ic_bdd761m_send@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B61B02313D00FCC975 /* ic_bdd761m_send@3x.png */; };
+		770551D21B02313D00FCC975 /* ic_bdd761m_sendfail.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B71B02313D00FCC975 /* ic_bdd761m_sendfail.png */; };
+		770551D31B02313D00FCC975 /* ic_bdd761m_sendfail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B81B02313D00FCC975 /* ic_bdd761m_sendfail@2x.png */; };
+		770551D41B02313D00FCC975 /* ic_bdd761m_sendfail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B91B02313D00FCC975 /* ic_bdd761m_sendfail@3x.png */; };
+		770551D71B02C82E00FCC975 /* TKMessageInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770551D91B02C82E00FCC975 /* TKMessageInputView.xib */; };
+		776B560C1B05BEE300960483 /* TKChatRoomSendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B560A1B05BEE300960483 /* TKChatRoomSendCell.m */; };
+		776B560D1B05BEE300960483 /* TKChatRoomSendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776B560B1B05BEE300960483 /* TKChatRoomSendCell.xib */; };
+		776B56111B05BEFC00960483 /* TKChatRoomReceiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B560F1B05BEFC00960483 /* TKChatRoomReceiveCell.m */; };
+		776B56121B05BEFC00960483 /* TKChatRoomReceiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776B56101B05BEFC00960483 /* TKChatRoomReceiveCell.xib */; };
+		77FC86081AEA0FA000E5DC53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FC86071AEA0FA000E5DC53 /* main.m */; };
+		77FC86131AEA0FA000E5DC53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FC86121AEA0FA000E5DC53 /* Images.xcassets */; };
+		77FC86161AEA0FA000E5DC53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77FC86141AEA0FA000E5DC53 /* LaunchScreen.xib */; };
+		77FC86221AEA0FA000E5DC53 /* TalketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FC86211AEA0FA000E5DC53 /* TalketTests.m */; };
+		77FC86311AEA11EB00E5DC53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FC86301AEA11EB00E5DC53 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77FC861C1AEA0FA000E5DC53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77FC85FA1AEA0FA000E5DC53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77FC86011AEA0FA000E5DC53;
+			remoteInfo = Talket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		770551761B022B0000FCC975 /* TKChatRoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKChatRoomController.h; sourceTree = "<group>"; };
+		770551771B022B0000FCC975 /* TKChatRoomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKChatRoomController.m; sourceTree = "<group>"; };
+		770551781B022B0000FCC975 /* TKChatRoomController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKChatRoomController.xib; sourceTree = "<group>"; };
+		770551851B022CF800FCC975 /* TKHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKHomeController.h; sourceTree = "<group>"; };
+		770551861B022CF800FCC975 /* TKHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKHomeController.m; sourceTree = "<group>"; };
+		770551871B022CF800FCC975 /* TKHomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKHomeController.xib; sourceTree = "<group>"; };
+		7705518A1B022D1E00FCC975 /* TKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKBaseViewController.h; sourceTree = "<group>"; };
+		7705518B1B022D1E00FCC975 /* TKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKBaseViewController.m; sourceTree = "<group>"; };
+		7705518D1B022DA400FCC975 /* TKBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKBaseNavigationController.h; sourceTree = "<group>"; };
+		7705518E1B022DA400FCC975 /* TKBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKBaseNavigationController.m; sourceTree = "<group>"; };
+		770551901B022FAD00FCC975 /* TKMessageInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageInputView.h; sourceTree = "<group>"; };
+		770551911B022FAD00FCC975 /* TKMessageInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageInputView.m; sourceTree = "<group>"; };
+		770551931B022FD100FCC975 /* TKMessageBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageBaseView.h; sourceTree = "<group>"; };
+		770551941B022FD100FCC975 /* TKMessageBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageBaseView.m; sourceTree = "<group>"; };
+		770551961B022FF200FCC975 /* TKMessageReceiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageReceiveView.h; sourceTree = "<group>"; };
+		770551971B022FF200FCC975 /* TKMessageReceiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageReceiveView.m; sourceTree = "<group>"; };
+		770551991B02300300FCC975 /* TKMessageSendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageSendView.h; sourceTree = "<group>"; };
+		7705519A1B02300300FCC975 /* TKMessageSendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageSendView.m; sourceTree = "<group>"; };
+		7705519F1B02313C00FCC975 /* bg_bdd761m_day_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bdd761m_day_title.png; sourceTree = "<group>"; };
+		770551A01B02313C00FCC975 /* bg_bdd761m_day_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_day_title@2x.png"; sourceTree = "<group>"; };
+		770551A11B02313C00FCC975 /* bg_bdd761m_day_title@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_day_title@3x.png"; sourceTree = "<group>"; };
+		770551A21B02313C00FCC975 /* bg_bdd761m_message_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bdd761m_message_bar.png; sourceTree = "<group>"; };
+		770551A31B02313C00FCC975 /* bg_bdd761m_message_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_message_bar@2x.png"; sourceTree = "<group>"; };
+		770551A41B02313C00FCC975 /* bg_bdd761m_message_bar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_message_bar@3x.png"; sourceTree = "<group>"; };
+		770551A51B02313C00FCC975 /* bg_bdd761m_message_box_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bdd761m_message_box_1.png; sourceTree = "<group>"; };
+		770551A61B02313C00FCC975 /* bg_bdd761m_message_box_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_message_box_1@2x.png"; sourceTree = "<group>"; };
+		770551A71B02313D00FCC975 /* bg_bdd761m_message_box_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_message_box_1@3x.png"; sourceTree = "<group>"; };
+		770551A81B02313D00FCC975 /* bg_bdd761m_message_box_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bdd761m_message_box_2.png; sourceTree = "<group>"; };
+		770551A91B02313D00FCC975 /* bg_bdd761m_message_box_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_message_box_2@2x.png"; sourceTree = "<group>"; };
+		770551AA1B02313D00FCC975 /* bg_bdd761m_message_box_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_message_box_2@3x.png"; sourceTree = "<group>"; };
+		770551AB1B02313D00FCC975 /* bg_bdd761m_message_input.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bdd761m_message_input.png; sourceTree = "<group>"; };
+		770551AC1B02313D00FCC975 /* bg_bdd761m_message_input@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_message_input@2x.png"; sourceTree = "<group>"; };
+		770551AD1B02313D00FCC975 /* bg_bdd761m_message_input@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_message_input@3x.png"; sourceTree = "<group>"; };
+		770551AE1B02313D00FCC975 /* chatroom_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatroom_bg.png; sourceTree = "<group>"; };
+		770551AF1B02313D00FCC975 /* chatroom_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatroom_bg@2x.png"; sourceTree = "<group>"; };
+		770551B01B02313D00FCC975 /* chatroom_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatroom_bg@3x.png"; sourceTree = "<group>"; };
+		770551B11B02313D00FCC975 /* ic_bdd761m_add_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_bdd761m_add_photo.png; sourceTree = "<group>"; };
+		770551B21B02313D00FCC975 /* ic_bdd761m_add_photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_bdd761m_add_photo@2x.png"; sourceTree = "<group>"; };
+		770551B31B02313D00FCC975 /* ic_bdd761m_add_photo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_bdd761m_add_photo@3x.png"; sourceTree = "<group>"; };
+		770551B41B02313D00FCC975 /* ic_bdd761m_send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_bdd761m_send.png; sourceTree = "<group>"; };
+		770551B51B02313D00FCC975 /* ic_bdd761m_send@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_bdd761m_send@2x.png"; sourceTree = "<group>"; };
+		770551B61B02313D00FCC975 /* ic_bdd761m_send@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_bdd761m_send@3x.png"; sourceTree = "<group>"; };
+		770551B71B02313D00FCC975 /* ic_bdd761m_sendfail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_bdd761m_sendfail.png; sourceTree = "<group>"; };
+		770551B81B02313D00FCC975 /* ic_bdd761m_sendfail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_bdd761m_sendfail@2x.png"; sourceTree = "<group>"; };
+		770551B91B02313D00FCC975 /* ic_bdd761m_sendfail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_bdd761m_sendfail@3x.png"; sourceTree = "<group>"; };
+		770551D81B02C82E00FCC975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TKMessageInputView.xib; sourceTree = "<group>"; };
+		776B56091B05BEE300960483 /* TKChatRoomSendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKChatRoomSendCell.h; sourceTree = "<group>"; };
+		776B560A1B05BEE300960483 /* TKChatRoomSendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKChatRoomSendCell.m; sourceTree = "<group>"; };
+		776B560B1B05BEE300960483 /* TKChatRoomSendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKChatRoomSendCell.xib; sourceTree = "<group>"; };
+		776B560E1B05BEFC00960483 /* TKChatRoomReceiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKChatRoomReceiveCell.h; sourceTree = "<group>"; };
+		776B560F1B05BEFC00960483 /* TKChatRoomReceiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKChatRoomReceiveCell.m; sourceTree = "<group>"; };
+		776B56101B05BEFC00960483 /* TKChatRoomReceiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKChatRoomReceiveCell.xib; sourceTree = "<group>"; };
+		77FC86021AEA0FA000E5DC53 /* Talket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Talket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77FC86061AEA0FA000E5DC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77FC86071AEA0FA000E5DC53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77FC86121AEA0FA000E5DC53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		77FC86151AEA0FA000E5DC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		77FC861B1AEA0FA000E5DC53 /* TalketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77FC86201AEA0FA000E5DC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77FC86211AEA0FA000E5DC53 /* TalketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalketTests.m; sourceTree = "<group>"; };
+		77FC862F1AEA11EB00E5DC53 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77FC86301AEA11EB00E5DC53 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77FC85FF1AEA0FA000E5DC53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77FC86181AEA0FA000E5DC53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7705516A1B022B0000FCC975 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				770551801B022CA800FCC975 /* Home */,
+				7705516B1B022B0000FCC975 /* Base */,
+				770551701B022B0000FCC975 /* IM */,
+				7705517C1B022B0000FCC975 /* Util */,
+			);
+			name = Module;
+			path = classes/Module;
+			sourceTree = "<group>";
+		};
+		7705516B1B022B0000FCC975 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7705516C1B022B0000FCC975 /* controller */,
+				7705516F1B022B0000FCC975 /* view */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7705516C1B022B0000FCC975 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				7705518A1B022D1E00FCC975 /* TKBaseViewController.h */,
+				7705518B1B022D1E00FCC975 /* TKBaseViewController.m */,
+				7705518D1B022DA400FCC975 /* TKBaseNavigationController.h */,
+				7705518E1B022DA400FCC975 /* TKBaseNavigationController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		7705516F1B022B0000FCC975 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		770551701B022B0000FCC975 /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				770551711B022B0000FCC975 /* Manager */,
+				770551721B022B0000FCC975 /* UI */,
+			);
+			path = IM;
+			sourceTree = "<group>";
+		};
+		770551711B022B0000FCC975 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		770551721B022B0000FCC975 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				770551731B022B0000FCC975 /* Controller */,
+				770551791B022B0000FCC975 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		770551731B022B0000FCC975 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				770551741B022B0000FCC975 /* chatroom */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		770551741B022B0000FCC975 /* chatroom */ = {
+			isa = PBXGroup;
+			children = (
+				770551751B022B0000FCC975 /* cells */,
+				770551761B022B0000FCC975 /* TKChatRoomController.h */,
+				770551771B022B0000FCC975 /* TKChatRoomController.m */,
+				770551781B022B0000FCC975 /* TKChatRoomController.xib */,
+			);
+			path = chatroom;
+			sourceTree = "<group>";
+		};
+		770551751B022B0000FCC975 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				776B56091B05BEE300960483 /* TKChatRoomSendCell.h */,
+				776B560A1B05BEE300960483 /* TKChatRoomSendCell.m */,
+				776B560B1B05BEE300960483 /* TKChatRoomSendCell.xib */,
+				776B560E1B05BEFC00960483 /* TKChatRoomReceiveCell.h */,
+				776B560F1B05BEFC00960483 /* TKChatRoomReceiveCell.m */,
+				776B56101B05BEFC00960483 /* TKChatRoomReceiveCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		770551791B022B0000FCC975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7705517A1B022B0000FCC975 /* inputView */,
+				7705517B1B022B0000FCC975 /* messageView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7705517A1B022B0000FCC975 /* inputView */ = {
+			isa = PBXGroup;
+			children = (
+				770551901B022FAD00FCC975 /* TKMessageInputView.h */,
+				770551911B022FAD00FCC975 /* TKMessageInputView.m */,
+				770551D91B02C82E00FCC975 /* TKMessageInputView.xib */,
+			);
+			path = inputView;
+			sourceTree = "<group>";
+		};
+		7705517B1B022B0000FCC975 /* messageView */ = {
+			isa = PBXGroup;
+			children = (
+				770551931B022FD100FCC975 /* TKMessageBaseView.h */,
+				770551941B022FD100FCC975 /* TKMessageBaseView.m */,
+				770551961B022FF200FCC975 /* TKMessageReceiveView.h */,
+				770551971B022FF200FCC975 /* TKMessageReceiveView.m */,
+				770551991B02300300FCC975 /* TKMessageSendView.h */,
+				7705519A1B02300300FCC975 /* TKMessageSendView.m */,
+			);
+			path = messageView;
+			sourceTree = "<group>";
+		};
+		7705517C1B022B0000FCC975 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		770551801B022CA800FCC975 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				770551811B022CDF00FCC975 /* UI */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		770551811B022CDF00FCC975 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				770551821B022CDF00FCC975 /* Controller */,
+				770551841B022CDF00FCC975 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		770551821B022CDF00FCC975 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				770551831B022CDF00FCC975 /* cells */,
+				770551851B022CF800FCC975 /* TKHomeController.h */,
+				770551861B022CF800FCC975 /* TKHomeController.m */,
+				770551871B022CF800FCC975 /* TKHomeController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		770551831B022CDF00FCC975 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		770551841B022CDF00FCC975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7705519C1B02303E00FCC975 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7705519D1B02303E00FCC975 /* image */,
+			);
+			name = Resources;
+			path = classes/Resources;
+			sourceTree = "<group>";
+		};
+		7705519D1B02303E00FCC975 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				7705519E1B02303E00FCC975 /* im */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		7705519E1B02303E00FCC975 /* im */ = {
+			isa = PBXGroup;
+			children = (
+				7705519F1B02313C00FCC975 /* bg_bdd761m_day_title.png */,
+				770551A01B02313C00FCC975 /* bg_bdd761m_day_title@2x.png */,
+				770551A11B02313C00FCC975 /* bg_bdd761m_day_title@3x.png */,
+				770551A21B02313C00FCC975 /* bg_bdd761m_message_bar.png */,
+				770551A31B02313C00FCC975 /* bg_bdd761m_message_bar@2x.png */,
+				770551A41B02313C00FCC975 /* bg_bdd761m_message_bar@3x.png */,
+				770551A51B02313C00FCC975 /* bg_bdd761m_message_box_1.png */,
+				770551A61B02313C00FCC975 /* bg_bdd761m_message_box_1@2x.png */,
+				770551A71B02313D00FCC975 /* bg_bdd761m_message_box_1@3x.png */,
+				770551A81B02313D00FCC975 /* bg_bdd761m_message_box_2.png */,
+				770551A91B02313D00FCC975 /* bg_bdd761m_message_box_2@2x.png */,
+				770551AA1B02313D00FCC975 /* bg_bdd761m_message_box_2@3x.png */,
+				770551AB1B02313D00FCC975 /* bg_bdd761m_message_input.png */,
+				770551AC1B02313D00FCC975 /* bg_bdd761m_message_input@2x.png */,
+				770551AD1B02313D00FCC975 /* bg_bdd761m_message_input@3x.png */,
+				770551AE1B02313D00FCC975 /* chatroom_bg.png */,
+				770551AF1B02313D00FCC975 /* chatroom_bg@2x.png */,
+				770551B01B02313D00FCC975 /* chatroom_bg@3x.png */,
+				770551B11B02313D00FCC975 /* ic_bdd761m_add_photo.png */,
+				770551B21B02313D00FCC975 /* ic_bdd761m_add_photo@2x.png */,
+				770551B31B02313D00FCC975 /* ic_bdd761m_add_photo@3x.png */,
+				770551B41B02313D00FCC975 /* ic_bdd761m_send.png */,
+				770551B51B02313D00FCC975 /* ic_bdd761m_send@2x.png */,
+				770551B61B02313D00FCC975 /* ic_bdd761m_send@3x.png */,
+				770551B71B02313D00FCC975 /* ic_bdd761m_sendfail.png */,
+				770551B81B02313D00FCC975 /* ic_bdd761m_sendfail@2x.png */,
+				770551B91B02313D00FCC975 /* ic_bdd761m_sendfail@3x.png */,
+			);
+			path = im;
+			sourceTree = "<group>";
+		};
+		77FC85F91AEA0FA000E5DC53 = {
+			isa = PBXGroup;
+			children = (
+				77FC86041AEA0FA000E5DC53 /* Talket */,
+				77FC861E1AEA0FA000E5DC53 /* TalketTests */,
+				77FC86031AEA0FA000E5DC53 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77FC86031AEA0FA000E5DC53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77FC86021AEA0FA000E5DC53 /* Talket.app */,
+				77FC861B1AEA0FA000E5DC53 /* TalketTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77FC86041AEA0FA000E5DC53 /* Talket */ = {
+			isa = PBXGroup;
+			children = (
+				7705516A1B022B0000FCC975 /* Module */,
+				7705519C1B02303E00FCC975 /* Resources */,
+				77FC86051AEA0FA000E5DC53 /* Supporting Files */,
+			);
+			path = Talket;
+			sourceTree = "<group>";
+		};
+		77FC86051AEA0FA000E5DC53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77FC862B1AEA11DD00E5DC53 /* delegate */,
+				77FC86121AEA0FA000E5DC53 /* Images.xcassets */,
+				77FC86141AEA0FA000E5DC53 /* LaunchScreen.xib */,
+				77FC86061AEA0FA000E5DC53 /* Info.plist */,
+				77FC86071AEA0FA000E5DC53 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77FC861E1AEA0FA000E5DC53 /* TalketTests */ = {
+			isa = PBXGroup;
+			children = (
+				77FC86211AEA0FA000E5DC53 /* TalketTests.m */,
+				77FC861F1AEA0FA000E5DC53 /* Supporting Files */,
+			);
+			path = TalketTests;
+			sourceTree = "<group>";
+		};
+		77FC861F1AEA0FA000E5DC53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77FC86201AEA0FA000E5DC53 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77FC862B1AEA11DD00E5DC53 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				77FC862F1AEA11EB00E5DC53 /* AppDelegate.h */,
+				77FC86301AEA11EB00E5DC53 /* AppDelegate.m */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77FC86011AEA0FA000E5DC53 /* Talket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77FC86251AEA0FA000E5DC53 /* Build configuration list for PBXNativeTarget "Talket" */;
+			buildPhases = (
+				77FC85FE1AEA0FA000E5DC53 /* Sources */,
+				77FC85FF1AEA0FA000E5DC53 /* Frameworks */,
+				77FC86001AEA0FA000E5DC53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Talket;
+			productName = Talket;
+			productReference = 77FC86021AEA0FA000E5DC53 /* Talket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77FC861A1AEA0FA000E5DC53 /* TalketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77FC86281AEA0FA000E5DC53 /* Build configuration list for PBXNativeTarget "TalketTests" */;
+			buildPhases = (
+				77FC86171AEA0FA000E5DC53 /* Sources */,
+				77FC86181AEA0FA000E5DC53 /* Frameworks */,
+				77FC86191AEA0FA000E5DC53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77FC861D1AEA0FA000E5DC53 /* PBXTargetDependency */,
+			);
+			name = TalketTests;
+			productName = TalketTests;
+			productReference = 77FC861B1AEA0FA000E5DC53 /* TalketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77FC85FA1AEA0FA000E5DC53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TK;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = truetel.com;
+				TargetAttributes = {
+					77FC86011AEA0FA000E5DC53 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					77FC861A1AEA0FA000E5DC53 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 77FC86011AEA0FA000E5DC53;
+					};
+				};
+			};
+			buildConfigurationList = 77FC85FD1AEA0FA000E5DC53 /* Build configuration list for PBXProject "Talket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77FC85F91AEA0FA000E5DC53;
+			productRefGroup = 77FC86031AEA0FA000E5DC53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77FC86011AEA0FA000E5DC53 /* Talket */,
+				77FC861A1AEA0FA000E5DC53 /* TalketTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77FC86001AEA0FA000E5DC53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770551D01B02313D00FCC975 /* ic_bdd761m_send@2x.png in Resources */,
+				7705517F1B022B0000FCC975 /* TKChatRoomController.xib in Resources */,
+				770551C81B02313D00FCC975 /* bg_bdd761m_message_input@3x.png in Resources */,
+				776B56121B05BEFC00960483 /* TKChatRoomReceiveCell.xib in Resources */,
+				770551CA1B02313D00FCC975 /* chatroom_bg@2x.png in Resources */,
+				770551C11B02313D00FCC975 /* bg_bdd761m_message_box_1@2x.png in Resources */,
+				770551891B022CF800FCC975 /* TKHomeController.xib in Resources */,
+				770551CE1B02313D00FCC975 /* ic_bdd761m_add_photo@3x.png in Resources */,
+				770551CB1B02313D00FCC975 /* chatroom_bg@3x.png in Resources */,
+				770551CF1B02313D00FCC975 /* ic_bdd761m_send.png in Resources */,
+				770551C61B02313D00FCC975 /* bg_bdd761m_message_input.png in Resources */,
+				770551D31B02313D00FCC975 /* ic_bdd761m_sendfail@2x.png in Resources */,
+				770551BF1B02313D00FCC975 /* bg_bdd761m_message_bar@3x.png in Resources */,
+				770551BD1B02313D00FCC975 /* bg_bdd761m_message_bar.png in Resources */,
+				770551CD1B02313D00FCC975 /* ic_bdd761m_add_photo@2x.png in Resources */,
+				770551D11B02313D00FCC975 /* ic_bdd761m_send@3x.png in Resources */,
+				770551C31B02313D00FCC975 /* bg_bdd761m_message_box_2.png in Resources */,
+				770551BA1B02313D00FCC975 /* bg_bdd761m_day_title.png in Resources */,
+				770551C51B02313D00FCC975 /* bg_bdd761m_message_box_2@3x.png in Resources */,
+				770551D41B02313D00FCC975 /* ic_bdd761m_sendfail@3x.png in Resources */,
+				770551CC1B02313D00FCC975 /* ic_bdd761m_add_photo.png in Resources */,
+				77FC86161AEA0FA000E5DC53 /* LaunchScreen.xib in Resources */,
+				770551C91B02313D00FCC975 /* chatroom_bg.png in Resources */,
+				776B560D1B05BEE300960483 /* TKChatRoomSendCell.xib in Resources */,
+				770551D71B02C82E00FCC975 /* TKMessageInputView.xib in Resources */,
+				770551D21B02313D00FCC975 /* ic_bdd761m_sendfail.png in Resources */,
+				77FC86131AEA0FA000E5DC53 /* Images.xcassets in Resources */,
+				770551C41B02313D00FCC975 /* bg_bdd761m_message_box_2@2x.png in Resources */,
+				770551BB1B02313D00FCC975 /* bg_bdd761m_day_title@2x.png in Resources */,
+				770551C01B02313D00FCC975 /* bg_bdd761m_message_box_1.png in Resources */,
+				770551C21B02313D00FCC975 /* bg_bdd761m_message_box_1@3x.png in Resources */,
+				770551BC1B02313D00FCC975 /* bg_bdd761m_day_title@3x.png in Resources */,
+				770551C71B02313D00FCC975 /* bg_bdd761m_message_input@2x.png in Resources */,
+				770551BE1B02313D00FCC975 /* bg_bdd761m_message_bar@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77FC86191AEA0FA000E5DC53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77FC85FE1AEA0FA000E5DC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770551951B022FD100FCC975 /* TKMessageBaseView.m in Sources */,
+				776B56111B05BEFC00960483 /* TKChatRoomReceiveCell.m in Sources */,
+				77FC86311AEA11EB00E5DC53 /* AppDelegate.m in Sources */,
+				770551981B022FF200FCC975 /* TKMessageReceiveView.m in Sources */,
+				776B560C1B05BEE300960483 /* TKChatRoomSendCell.m in Sources */,
+				770551921B022FAE00FCC975 /* TKMessageInputView.m in Sources */,
+				7705518C1B022D1E00FCC975 /* TKBaseViewController.m in Sources */,
+				770551881B022CF800FCC975 /* TKHomeController.m in Sources */,
+				7705517E1B022B0000FCC975 /* TKChatRoomController.m in Sources */,
+				7705519B1B02300300FCC975 /* TKMessageSendView.m in Sources */,
+				77FC86081AEA0FA000E5DC53 /* main.m in Sources */,
+				7705518F1B022DA400FCC975 /* TKBaseNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77FC86171AEA0FA000E5DC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77FC86221AEA0FA000E5DC53 /* TalketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77FC861D1AEA0FA000E5DC53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77FC86011AEA0FA000E5DC53 /* Talket */;
+			targetProxy = 77FC861C1AEA0FA000E5DC53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		770551D91B02C82E00FCC975 /* TKMessageInputView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				770551D81B02C82E00FCC975 /* Base */,
+			);
+			name = TKMessageInputView.xib;
+			sourceTree = "<group>";
+		};
+		77FC86141AEA0FA000E5DC53 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77FC86151AEA0FA000E5DC53 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77FC86231AEA0FA000E5DC53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77FC86241AEA0FA000E5DC53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77FC86261AEA0FA000E5DC53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Talket/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77FC86271AEA0FA000E5DC53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Talket/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		77FC86291AEA0FA000E5DC53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TalketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talket.app/Talket";
+			};
+			name = Debug;
+		};
+		77FC862A1AEA0FA000E5DC53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TalketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Talket.app/Talket";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77FC85FD1AEA0FA000E5DC53 /* Build configuration list for PBXProject "Talket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77FC86231AEA0FA000E5DC53 /* Debug */,
+				77FC86241AEA0FA000E5DC53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77FC86251AEA0FA000E5DC53 /* Build configuration list for PBXNativeTarget "Talket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77FC86261AEA0FA000E5DC53 /* Debug */,
+				77FC86271AEA0FA000E5DC53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77FC86281AEA0FA000E5DC53 /* Build configuration list for PBXNativeTarget "TalketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77FC86291AEA0FA000E5DC53 /* Debug */,
+				77FC862A1AEA0FA000E5DC53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77FC85FA1AEA0FA000E5DC53 /* Project object */;
+}
