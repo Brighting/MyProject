@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TKChatRoomController">
             <connections>
+                <outlet property="messageInputView" destination="tH4-K6-D0N" id="b0B-a4-Kzo"/>
+                <outlet property="tableView" destination="eb7-dt-pDi" id="yCW-TN-kAn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

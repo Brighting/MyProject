@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TKChatRoomBaseCell.h"
 
-@interface TKChatRoomSendCell : UITableViewCell
+@interface TKChatRoomSendCell : TKChatRoomBaseCell
 
 @end

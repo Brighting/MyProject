@@ -14,9 +14,6 @@
 		7705518C1B022D1E00FCC975 /* TKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705518B1B022D1E00FCC975 /* TKBaseViewController.m */; };
 		7705518F1B022DA400FCC975 /* TKBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705518E1B022DA400FCC975 /* TKBaseNavigationController.m */; };
 		770551921B022FAE00FCC975 /* TKMessageInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770551911B022FAD00FCC975 /* TKMessageInputView.m */; };
-		770551951B022FD100FCC975 /* TKMessageBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770551941B022FD100FCC975 /* TKMessageBaseView.m */; };
-		770551981B022FF200FCC975 /* TKMessageReceiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770551971B022FF200FCC975 /* TKMessageReceiveView.m */; };
-		7705519B1B02300300FCC975 /* TKMessageSendView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7705519A1B02300300FCC975 /* TKMessageSendView.m */; };
 		770551BA1B02313D00FCC975 /* bg_bdd761m_day_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 7705519F1B02313C00FCC975 /* bg_bdd761m_day_title.png */; };
 		770551BB1B02313D00FCC975 /* bg_bdd761m_day_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A01B02313C00FCC975 /* bg_bdd761m_day_title@2x.png */; };
 		770551BC1B02313D00FCC975 /* bg_bdd761m_day_title@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551A11B02313C00FCC975 /* bg_bdd761m_day_title@3x.png */; };
@@ -45,6 +42,10 @@
 		770551D31B02313D00FCC975 /* ic_bdd761m_sendfail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B81B02313D00FCC975 /* ic_bdd761m_sendfail@2x.png */; };
 		770551D41B02313D00FCC975 /* ic_bdd761m_sendfail@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 770551B91B02313D00FCC975 /* ic_bdd761m_sendfail@3x.png */; };
 		770551D71B02C82E00FCC975 /* TKMessageInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 770551D91B02C82E00FCC975 /* TKMessageInputView.xib */; };
+		771C2DD11B0EDA4A0000F9B7 /* TKMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C2DD01B0EDA4A0000F9B7 /* TKMessageView.m */; };
+		771C2DD41B0EF1070000F9B7 /* TKMessageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C2DD31B0EF1070000F9B7 /* TKMessageTextView.m */; };
+		771C2DD71B0EF1180000F9B7 /* TKMessageImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C2DD61B0EF1180000F9B7 /* TKMessageImageView.m */; };
+		771C2DDE1B0EFC010000F9B7 /* TKChatRoomBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771C2DDD1B0EFC010000F9B7 /* TKChatRoomBaseCell.m */; };
 		776B560C1B05BEE300960483 /* TKChatRoomSendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B560A1B05BEE300960483 /* TKChatRoomSendCell.m */; };
 		776B560D1B05BEE300960483 /* TKChatRoomSendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 776B560B1B05BEE300960483 /* TKChatRoomSendCell.xib */; };
 		776B56111B05BEFC00960483 /* TKChatRoomReceiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B560F1B05BEFC00960483 /* TKChatRoomReceiveCell.m */; };
@@ -79,12 +80,6 @@
 		7705518E1B022DA400FCC975 /* TKBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKBaseNavigationController.m; sourceTree = "<group>"; };
 		770551901B022FAD00FCC975 /* TKMessageInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageInputView.h; sourceTree = "<group>"; };
 		770551911B022FAD00FCC975 /* TKMessageInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageInputView.m; sourceTree = "<group>"; };
-		770551931B022FD100FCC975 /* TKMessageBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageBaseView.h; sourceTree = "<group>"; };
-		770551941B022FD100FCC975 /* TKMessageBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageBaseView.m; sourceTree = "<group>"; };
-		770551961B022FF200FCC975 /* TKMessageReceiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageReceiveView.h; sourceTree = "<group>"; };
-		770551971B022FF200FCC975 /* TKMessageReceiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageReceiveView.m; sourceTree = "<group>"; };
-		770551991B02300300FCC975 /* TKMessageSendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageSendView.h; sourceTree = "<group>"; };
-		7705519A1B02300300FCC975 /* TKMessageSendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageSendView.m; sourceTree = "<group>"; };
 		7705519F1B02313C00FCC975 /* bg_bdd761m_day_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_bdd761m_day_title.png; sourceTree = "<group>"; };
 		770551A01B02313C00FCC975 /* bg_bdd761m_day_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_day_title@2x.png"; sourceTree = "<group>"; };
 		770551A11B02313C00FCC975 /* bg_bdd761m_day_title@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_bdd761m_day_title@3x.png"; sourceTree = "<group>"; };
@@ -113,6 +108,16 @@
 		770551B81B02313D00FCC975 /* ic_bdd761m_sendfail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_bdd761m_sendfail@2x.png"; sourceTree = "<group>"; };
 		770551B91B02313D00FCC975 /* ic_bdd761m_sendfail@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_bdd761m_sendfail@3x.png"; sourceTree = "<group>"; };
 		770551D81B02C82E00FCC975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TKMessageInputView.xib; sourceTree = "<group>"; };
+		771C2DCF1B0EDA4A0000F9B7 /* TKMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageView.h; sourceTree = "<group>"; };
+		771C2DD01B0EDA4A0000F9B7 /* TKMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageView.m; sourceTree = "<group>"; };
+		771C2DD21B0EF1070000F9B7 /* TKMessageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageTextView.h; sourceTree = "<group>"; };
+		771C2DD31B0EF1070000F9B7 /* TKMessageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageTextView.m; sourceTree = "<group>"; };
+		771C2DD51B0EF1180000F9B7 /* TKMessageImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageImageView.h; sourceTree = "<group>"; };
+		771C2DD61B0EF1180000F9B7 /* TKMessageImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKMessageImageView.m; sourceTree = "<group>"; };
+		771C2DD81B0EF38E0000F9B7 /* TKChatRoomCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKChatRoomCellDelegate.h; sourceTree = "<group>"; };
+		771C2DD91B0EF3C20000F9B7 /* TKMessageType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKMessageType.h; sourceTree = "<group>"; };
+		771C2DDC1B0EFC010000F9B7 /* TKChatRoomBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKChatRoomBaseCell.h; sourceTree = "<group>"; };
+		771C2DDD1B0EFC010000F9B7 /* TKChatRoomBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKChatRoomBaseCell.m; sourceTree = "<group>"; };
 		776B56091B05BEE300960483 /* TKChatRoomSendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKChatRoomSendCell.h; sourceTree = "<group>"; };
 		776B560A1B05BEE300960483 /* TKChatRoomSendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKChatRoomSendCell.m; sourceTree = "<group>"; };
 		776B560B1B05BEE300960483 /* TKChatRoomSendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKChatRoomSendCell.xib; sourceTree = "<group>"; };
@@ -200,6 +205,8 @@
 		770551711B022B0000FCC975 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				771C2DD81B0EF38E0000F9B7 /* TKChatRoomCellDelegate.h */,
+				771C2DD91B0EF3C20000F9B7 /* TKMessageType.h */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -235,6 +242,8 @@
 		770551751B022B0000FCC975 /* cells */ = {
 			isa = PBXGroup;
 			children = (
+				771C2DDC1B0EFC010000F9B7 /* TKChatRoomBaseCell.h */,
+				771C2DDD1B0EFC010000F9B7 /* TKChatRoomBaseCell.m */,
 				776B56091B05BEE300960483 /* TKChatRoomSendCell.h */,
 				776B560A1B05BEE300960483 /* TKChatRoomSendCell.m */,
 				776B560B1B05BEE300960483 /* TKChatRoomSendCell.xib */,
@@ -267,12 +276,12 @@
 		7705517B1B022B0000FCC975 /* messageView */ = {
 			isa = PBXGroup;
 			children = (
-				770551931B022FD100FCC975 /* TKMessageBaseView.h */,
-				770551941B022FD100FCC975 /* TKMessageBaseView.m */,
-				770551961B022FF200FCC975 /* TKMessageReceiveView.h */,
-				770551971B022FF200FCC975 /* TKMessageReceiveView.m */,
-				770551991B02300300FCC975 /* TKMessageSendView.h */,
-				7705519A1B02300300FCC975 /* TKMessageSendView.m */,
+				771C2DCF1B0EDA4A0000F9B7 /* TKMessageView.h */,
+				771C2DD01B0EDA4A0000F9B7 /* TKMessageView.m */,
+				771C2DD21B0EF1070000F9B7 /* TKMessageTextView.h */,
+				771C2DD31B0EF1070000F9B7 /* TKMessageTextView.m */,
+				771C2DD51B0EF1180000F9B7 /* TKMessageImageView.h */,
+				771C2DD61B0EF1180000F9B7 /* TKMessageImageView.m */,
 			);
 			path = messageView;
 			sourceTree = "<group>";
@@ -575,16 +584,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				770551951B022FD100FCC975 /* TKMessageBaseView.m in Sources */,
+				771C2DD41B0EF1070000F9B7 /* TKMessageTextView.m in Sources */,
 				776B56111B05BEFC00960483 /* TKChatRoomReceiveCell.m in Sources */,
 				77FC86311AEA11EB00E5DC53 /* AppDelegate.m in Sources */,
-				770551981B022FF200FCC975 /* TKMessageReceiveView.m in Sources */,
 				776B560C1B05BEE300960483 /* TKChatRoomSendCell.m in Sources */,
 				770551921B022FAE00FCC975 /* TKMessageInputView.m in Sources */,
 				7705518C1B022D1E00FCC975 /* TKBaseViewController.m in Sources */,
 				770551881B022CF800FCC975 /* TKHomeController.m in Sources */,
+				771C2DD71B0EF1180000F9B7 /* TKMessageImageView.m in Sources */,
 				7705517E1B022B0000FCC975 /* TKChatRoomController.m in Sources */,
-				7705519B1B02300300FCC975 /* TKMessageSendView.m in Sources */,
+				771C2DDE1B0EFC010000F9B7 /* TKChatRoomBaseCell.m in Sources */,
+				771C2DD11B0EDA4A0000F9B7 /* TKMessageView.m in Sources */,
 				77FC86081AEA0FA000E5DC53 /* main.m in Sources */,
 				7705518F1B022DA400FCC975 /* TKBaseNavigationController.m in Sources */,
 			);

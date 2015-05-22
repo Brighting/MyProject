@@ -8,8 +8,17 @@
 
 #import "TKChatRoomController.h"
 #import "TKMessageInputView.h"
+#import "TKChatRoomSendCell.h"
+#import "TKChatRoomReceiveCell.h"
 
-@interface TKChatRoomController ()
+
+@interface TKChatRoomController ()<UITableViewDataSource,UITableViewDelegate>
+//UI
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet TKMessageInputView *messageInputView;
+
+//Data
+@property (nonatomic, strong ) NSMutableArray           *messageList;
 
 @end
 
@@ -17,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setupUI];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -26,14 +35,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - private methods
+-(void)setupUI{
+    //table View
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    _tableView.estimatedRowHeight = 65.0;
+    _tableView.rowHeight = UITableViewAutomaticDimension;
+    [_tableView registerNib:[UINib nibWithNibName:@"TKChatRoomSendCell" bundle:nil] forCellReuseIdentifier:@"TKChatRoomSendCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"TKChatRoomReceiveCell" bundle:nil] forCellReuseIdentifier:@"TKChatRoomReceiveCell"];
 }
-*/
+#pragma mark - UITableViewDataSource methods
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1000;
+}
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = nil;
+    TKChatRoomReceiveCell *receiveCell = nil;
+    TKChatRoomSendCell *sendCell = nil;
+    sendCell = [_tableView dequeueReusableCellWithIdentifier:@"TKChatRoomSendCell"];
+    sendCell.mMessageType = TKMessageTypePlainText;
+    [sendCell setMessageText:@"HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"];
+    cell = sendCell;
+    return cell;
+}
 @end

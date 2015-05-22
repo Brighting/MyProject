@@ -1,14 +1,14 @@
 //
-//  TKMessageSendView.m
+//  TKMessageImageView.m
 //  Talket
 //
-//  Created by zhangheliang on 15/5/12.
+//  Created by zhangheliang on 15/5/22.
 //  Copyright (c) 2015年 truetel.com. All rights reserved.
 //
 
-#import "TKMessageSendView.h"
+#import "TKMessageImageView.h"
 
-@implementation TKMessageSendView
+@implementation TKMessageImageView
 
 /*
 // Only override drawRect: if you perform custom drawing.
