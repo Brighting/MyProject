@@ -7,53 +7,41 @@
 //
 
 #import "TKChatRoomBaseCell.h"
-@interface TKChatRoomBaseCell()
-//Cell title
-@property (weak, nonatomic) IBOutlet UIView             *mCellTitleView;
-@property (weak, nonatomic) IBOutlet UILabel            *mCellTitleLab;
-@property (weak, nonatomic) IBOutlet UIImageView        *mCellTitleBackImg;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mChatRoomTitleHeiht;
 
-//message content
-@property (weak, nonatomic) IBOutlet UITextView         *mMessageContentView;
-//message status
-@property (weak, nonatomic) IBOutlet UILabel            *mReadCountLab;
-@property (weak, nonatomic) IBOutlet UILabel            *mTimeLab;
-@property (weak, nonatomic) IBOutlet UIImageView        *mMessageStatusImg;
+@interface TKChatRoomBaseCell ()
+//message title
+@property (weak, nonatomic) IBOutlet UIView             *cellTitleView;
+@property (weak, nonatomic) IBOutlet UILabel            *cellTitleLab;
+@property (weak, nonatomic) IBOutlet UIImageView        *cellTitleBackImg;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *cellTitleHeiht;
 
+//message time
+@property (weak, nonatomic) IBOutlet UILabel            *timeLab;
 
+@property (nonatomic, assign) CGFloat                   cellTitleOriginHeight;
 @end
 @implementation TKChatRoomBaseCell
--(void)setMMessageType:(TKMessageType)mMessageType{
-//    _mMessageType = mMessageType;
-//    _mMessgeView.mMessageType = _mMessageType;
-//    switch (mMessageType) {
-//        case TKMessageTypePlainText:
-//        {
-//            
-//            break;
-//        }
-//        case TKMessageTypeImage:
-//        {
-//            break;
-//        }
-//        default:
-//            break;
-//    }
+#pragma mark - public methods
+-(void)setCellTitle:(NSString *)title{
+    if (title.length > 0) {
+        _cellTitleLab.text = title;
+        _cellTitleHeiht.constant = _cellTitleOriginHeight;
+    }else{
+        _cellTitleHeiht.constant = 0;
+    }
 }
--(void)setMessageText:(NSString *)messageText{
-    _mMessageContentView.text = messageText;
+-(void)setTime:(NSString *)timeStr{
+    _timeLab.text = timeStr;
 }
+-(void)setupUI{
+    return;
+}
+#pragma mark -override methods
 - (void)awakeFromNib {
-    _mMessageContentView.editable = NO;
-    _mMessageContentView.scrollEnabled = NO;
     // Initialization code
+    _cellTitleOriginHeight = _cellTitleHeiht.constant;
 }
+#pragma mark - private methods
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
 
 @end

@@ -7,14 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TKMessageView.h"
-#import "TKMessageType.h"
 
 @interface TKChatRoomBaseCell : UITableViewCell
-//message type
-@property (nonatomic, assign) TKMessageType             mMessageType;
--(CGFloat)getCellHeight;
+-(void)setupUI;
 
+-(void)setCellTitle:(NSString *)title;
 
--(void)setMessageText:(NSString *)messageText;
+-(void)setTime:(NSString *)timeStr;
+
 @end

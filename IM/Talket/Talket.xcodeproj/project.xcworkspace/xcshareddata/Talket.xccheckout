@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>934ACE30-A575-4AC5-AEF9-2116C7C99839</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Talket</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>58754032098B34A7C5DEE3190AF8C548976A3C8A</key>
 		<string>https://github.com/Brighting/MyProject.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>IM/Talket/Talket.xcodeproj</string>
+	<string>IM/Talket/Talket.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>58754032098B34A7C5DEE3190AF8C548976A3C8A</key>

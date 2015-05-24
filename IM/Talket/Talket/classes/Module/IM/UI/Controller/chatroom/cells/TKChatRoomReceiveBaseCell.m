@@ -1,14 +1,14 @@
 //
-//  TKChatRoomSendCell.m
+//  TKChatRoomReceiveBaseCell.m
 //  Talket
 //
-//  Created by zhangheliang on 15/5/15.
+//  Created by heliangzhang on 15/5/23.
 //  Copyright (c) 2015年 truetel.com. All rights reserved.
 //
 
-#import "TKChatRoomSendCell.h"
+#import "TKChatRoomReceiveBaseCell.h"
 
-@implementation TKChatRoomSendCell
+@implementation TKChatRoomReceiveBaseCell
 
 - (void)awakeFromNib {
     // Initialization code

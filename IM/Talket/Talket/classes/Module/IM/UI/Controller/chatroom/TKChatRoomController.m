@@ -8,8 +8,8 @@
 
 #import "TKChatRoomController.h"
 #import "TKMessageInputView.h"
-#import "TKChatRoomSendCell.h"
-#import "TKChatRoomReceiveCell.h"
+#import "TKChatRoomSendPlainTextCell.h"
+#import "TKChatRoomReceivePlainTextCell.h"
 
 
 @interface TKChatRoomController ()<UITableViewDataSource,UITableViewDelegate>
@@ -42,8 +42,8 @@
     _tableView.dataSource = self;
     _tableView.estimatedRowHeight = 65.0;
     _tableView.rowHeight = UITableViewAutomaticDimension;
-    [_tableView registerNib:[UINib nibWithNibName:@"TKChatRoomSendCell" bundle:nil] forCellReuseIdentifier:@"TKChatRoomSendCell"];
-    [_tableView registerNib:[UINib nibWithNibName:@"TKChatRoomReceiveCell" bundle:nil] forCellReuseIdentifier:@"TKChatRoomReceiveCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"TKChatRoomSendPlainTextCell" bundle:nil] forCellReuseIdentifier:@"TKChatRoomSendPlainTextCell"];
+    [_tableView registerNib:[UINib nibWithNibName:@"TKChatRoomReceivePlainTextCell" bundle:nil] forCellReuseIdentifier:@"TKChatRoomReceivePlainTextCell"];
 }
 #pragma mark - UITableViewDataSource methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -52,11 +52,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = nil;
-    TKChatRoomReceiveCell *receiveCell = nil;
-    TKChatRoomSendCell *sendCell = nil;
-    sendCell = [_tableView dequeueReusableCellWithIdentifier:@"TKChatRoomSendCell"];
-    sendCell.mMessageType = TKMessageTypePlainText;
-    [sendCell setMessageText:@"HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"];
+    TKChatRoomReceivePlainTextCell *receiveCell = nil;
+    TKChatRoomSendPlainTextCell *sendCell = nil;
+    sendCell = [_tableView dequeueReusableCellWithIdentifier:@"TKChatRoomSendPlainTextCell"];
+    [sendCell setPlainTextContent:@"TKChatRoomReceivePlainTextCellTKChatRoomReceivePlainTextCellTKChatRoomReceivePlainTextCellTKChatRoomReceivePlainTextCell http://sports.sina.com.cn "];
     cell = sendCell;
     return cell;
 }
