@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TKChatRoomSendBaseCell.h"
+#import "IMChatRoomSendBaseCell.h"
 
-@interface TKChatRoomSendPlainTextCell : TKChatRoomSendBaseCell
+@interface IMChatRoomSendPlainTextCell : IMChatRoomSendBaseCell
 -(void)setPlainTextContent:(NSString *)plainTextContent;
 @end

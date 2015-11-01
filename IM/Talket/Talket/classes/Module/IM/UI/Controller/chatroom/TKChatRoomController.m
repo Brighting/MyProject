@@ -7,15 +7,15 @@
 //
 
 #import "TKChatRoomController.h"
-#import "TKMessageInputView.h"
-#import "TKChatRoomSendPlainTextCell.h"
-#import "TKChatRoomReceivePlainTextCell.h"
+#import "IMMessageInputView.h"
+#import "IMChatRoomSendPlainTextCell.h"
+#import "IMChatRoomReceivePlainTextCell.h"
 
 
 @interface TKChatRoomController ()<UITableViewDataSource,UITableViewDelegate>
 //UI
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) IBOutlet TKMessageInputView *messageInputView;
+@property (strong, nonatomic) IBOutlet IMMessageInputView *messageInputView;
 
 //Data
 @property (nonatomic, strong ) NSMutableArray           *messageList;
@@ -52,8 +52,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = nil;
-    TKChatRoomReceivePlainTextCell *receiveCell = nil;
-    TKChatRoomSendPlainTextCell *sendCell = nil;
+    IMChatRoomReceivePlainTextCell *receiveCell = nil;
+    IMChatRoomSendPlainTextCell *sendCell = nil;
     sendCell = [_tableView dequeueReusableCellWithIdentifier:@"TKChatRoomSendPlainTextCell"];
     [sendCell setPlainTextContent:@"TKChatRoomReceivePlainTextCellTKChatRoomReceivePlainTextCellTKChatRoomReceivePlainTextCellTKChatRoomReceivePlainTextCell http://sports.sina.com.cn "];
     cell = sendCell;

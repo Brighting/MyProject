@@ -6,15 +6,15 @@
 //  Copyright (c) 2015年 truetel.com. All rights reserved.
 //
 
-#import "TKChatRoomSendPlainTextCell.h"
+#import "IMChatRoomSendPlainTextCell.h"
 #import "TKMessageTextView.h"
 
-@interface TKChatRoomSendPlainTextCell ()
+@interface IMChatRoomSendPlainTextCell ()
 @property (weak, nonatomic) IBOutlet UIImageView              *bubbleImg;
 
 @property (weak, nonatomic) IBOutlet TKMessageTextView        *plainTextView;
 @end
-@implementation TKChatRoomSendPlainTextCell
+@implementation IMChatRoomSendPlainTextCell
 #pragma mark - public methods
 -(void)setPlainTextContent:(NSString *)plainTextContent{
     _plainTextView.text = plainTextContent;

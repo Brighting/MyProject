@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TKChatRoomReceivePlainTextCell : UITableViewCell
+@interface IMChatRoomReceivePlainTextCell : UITableViewCell
 
 @end

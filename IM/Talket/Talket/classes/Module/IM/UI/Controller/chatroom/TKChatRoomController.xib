@@ -20,11 +20,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="527"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tH4-K6-D0N" customClass="TKMessageInputView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tH4-K6-D0N" customClass="IMMessageInputView">
                     <rect key="frame" x="0.0" y="527" width="320" height="41"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="41" id="A89-f2-RAU"/>
+                        <constraint firstAttribute="height" constant="41" id="KqT-Rh-Pk7"/>
                     </constraints>
                 </view>
             </subviews>
@@ -39,7 +39,7 @@
                 <constraint firstAttribute="bottom" secondItem="tH4-K6-D0N" secondAttribute="bottom" id="YKg-Um-oSG"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="202" y="320"/>
+            <point key="canvasLocation" x="58" y="116"/>
         </view>
     </objects>
 </document>

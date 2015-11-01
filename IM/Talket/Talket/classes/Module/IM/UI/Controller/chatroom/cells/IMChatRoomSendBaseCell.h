@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TKChatRoomBaseCell.h"
+#import "IMChatRoomBaseCell.h"
 #import "TKMessageSendState.h"
-@interface TKChatRoomSendBaseCell : TKChatRoomBaseCell
+@interface IMChatRoomSendBaseCell : IMChatRoomBaseCell
 
 
 -(void)setReadCount:(int)readCount;

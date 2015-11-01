@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 truetel.com. All rights reserved.
 //
 
-#import "TKMessageInputView.h"
+#import "IMMessageInputView.h"
 #define TKMessageInputViewXibID   101
-@interface TKMessageInputView()
+@interface IMMessageInputView()
 
 @end
 
-@implementation TKMessageInputView
+@implementation IMMessageInputView
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {

@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 truetel.com. All rights reserved.
 //
 
-#import "TKChatRoomSendBaseCell.h"
+#import "IMChatRoomSendBaseCell.h"
 
-@interface TKChatRoomSendBaseCell ()
+@interface IMChatRoomSendBaseCell ()
 //message status
 @property (weak, nonatomic) IBOutlet UILabel            *readCountLab;
 @property (weak, nonatomic) IBOutlet UIImageView        *sendStatusImg;
@@ -17,7 +17,7 @@
 @property (nonatomic, assign) TKMessageSendState        sendState;
 
 @end
-@implementation TKChatRoomSendBaseCell
+@implementation IMChatRoomSendBaseCell
 #pragma mark - public methods
 -(void)setReadCount:(int)readCount{
     if (readCount > 0) {

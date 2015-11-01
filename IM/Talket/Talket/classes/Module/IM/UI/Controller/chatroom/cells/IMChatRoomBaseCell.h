@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TKChatRoomBaseCell : UITableViewCell
+@interface IMChatRoomBaseCell : UITableViewCell
 -(void)setupUI;
 
 -(void)setCellTitle:(NSString *)title;

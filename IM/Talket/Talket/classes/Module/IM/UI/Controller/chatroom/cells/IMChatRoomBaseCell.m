@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 truetel.com. All rights reserved.
 //
 
-#import "TKChatRoomBaseCell.h"
+#import "IMChatRoomBaseCell.h"
 
-@interface TKChatRoomBaseCell ()
+@interface IMChatRoomBaseCell ()
 //message title
 @property (weak, nonatomic) IBOutlet UIView             *cellTitleView;
 @property (weak, nonatomic) IBOutlet UILabel            *cellTitleLab;
@@ -20,7 +20,7 @@
 
 @property (nonatomic, assign) CGFloat                   cellTitleOriginHeight;
 @end
-@implementation TKChatRoomBaseCell
+@implementation IMChatRoomBaseCell
 #pragma mark - public methods
 -(void)setCellTitle:(NSString *)title{
     if (title.length > 0) {

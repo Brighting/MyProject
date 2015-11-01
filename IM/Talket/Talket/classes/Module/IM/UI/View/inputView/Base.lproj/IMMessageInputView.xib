@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TKMessageInputView">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IMMessageInputView">
             <connections>
                 <outlet property="mInputBoxBGImg" destination="y4F-dN-HUb" id="Efu-Dw-XSD"/>
                 <outlet property="mMessageInputBGImg" destination="x0b-Kc-bTS" id="vaX-n1-1Bz"/>

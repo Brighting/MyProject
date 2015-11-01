@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 truetel.com. All rights reserved.
 //
 
-#import "TKChatRoomReceiveBaseCell.h"
+#import "IMChatRoomReceiveBaseCell.h"
 
-@implementation TKChatRoomReceiveBaseCell
+@implementation IMChatRoomReceiveBaseCell
 
 - (void)awakeFromNib {
     // Initialization code

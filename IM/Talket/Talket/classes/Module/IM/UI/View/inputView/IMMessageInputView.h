@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TKMessageInputView : UIView
+@interface IMMessageInputView : UIView
 @property (strong, nonatomic) IBOutlet UIView *view;
 @property (weak, nonatomic) IBOutlet UIImageView *mMessageInputBGImg;
 @property (weak, nonatomic) IBOutlet UIImageView *mInputBoxBGImg;
